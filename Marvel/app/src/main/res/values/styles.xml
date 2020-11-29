@@ -1,0 +1,17 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Splash" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#BB1C1F</item>
+        <item name="colorPrimaryDark">#EA2427</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#BB1C1F</item>
+        <item name="colorPrimaryDark">#EA2427</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+</resources>
