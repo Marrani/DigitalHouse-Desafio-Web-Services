@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
-import com.gabrielmarrani.marvel.MainActivity
+import com.gabrielmarrani.marvel.LoginActivity
 import com.gabrielmarrani.marvel.R
 
 class SplashScreenActivity : AppCompatActivity() {
@@ -17,7 +17,7 @@ class SplashScreenActivity : AppCompatActivity() {
 
 
         Handler(Looper.getMainLooper()).postDelayed({
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
             finish()
         }, timeSplashScreen)
