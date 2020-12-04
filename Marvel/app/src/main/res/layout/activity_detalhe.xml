@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00162C"
+    tools:context=".detalhe.view.DetalheActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarDetalhes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:elevation="@dimen/dim_2_dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:navigationIcon="@drawable/ic_back_24" />
+
+        <ImageView
+            android:id="@+id/imgDetalhe"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_250_dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/splashscreen"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imgMiniDetalhe"
+            android:layout_width="@dimen/dim_150_dp"
+            android:layout_height="@dimen/dim_200_dp"
+            android:layout_marginTop="@dimen/dim_84_dp"
+            android:scaleType="fitXY"
+            android:background="#fff"
+            android:padding="@dimen/dim_4_dp"
+            tools:src="@drawable/splashscreen"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="@dimen/dim_20_dp"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/txtTitleDetalhes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="@dimen/dim_20_dp"
+            android:textSize="24sp"
+            android:layout_marginEnd="@dimen/dim_20_dp"
+            android:layout_marginTop="@dimen/dim_20_dp"
+            app:layout_constraintTop_toBottomOf="@+id/imgMiniDetalhe"
+            android:textColor="#fff"
+            tools:text="AMAZING APIDER-MAN (2014) # 1 (MHAN VARIANT)"/>
+
+        <TextView
+            android:id="@+id/txtDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textColor="#fff"
+            android:layout_marginStart="@dimen/dim_20_dp"
+            android:layout_marginEnd="@dimen/dim_20_dp"
+            android:layout_marginTop="@dimen/dim_20_dp"
+            app:layout_constraintTop_toBottomOf="@+id/txtTitleDetalhes"/>
+
+        <TextView
+            android:id="@+id/txtPublished"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/dim_20_dp"
+            android:layout_marginStart="@dimen/dim_20_dp"
+            android:textColor="#fff"
+            app:layout_constraintTop_toBottomOf="@id/txtDescription"
+            android:text="@string/published"/>
+
+
+        <TextView
+            android:id="@+id/txtDataPublicacao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@+id/txtPublished"
+            android:layout_marginEnd="@dimen/dim_20_dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="@dimen/dim_20_dp"
+            android:textColor="#fff"
+            app:layout_constraintTop_toBottomOf="@id/txtDescription"
+            tools:text="April 30, 2014"/>
+
+        <TextView
+            android:id="@+id/txtPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/dim_20_dp"
+            android:layout_marginStart="@dimen/dim_20_dp"
+            android:textColor="#fff"
+            app:layout_constraintTop_toBottomOf="@id/txtPublished"
+            android:text="@string/price"/>
+
+
+        <TextView
+            android:id="@+id/txtPriceValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@+id/txtPublished"
+            android:layout_marginTop="@dimen/dim_20_dp"
+            android:layout_marginStart="@dimen/dim_20_dp"
+            android:textColor="#fff"
+            app:layout_constraintTop_toBottomOf="@id/txtPublished"
+            tools:text="$ 5,99"/>
+
+        <TextView
+            android:id="@+id/txtPages"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/dim_20_dp"
+            android:layout_marginStart="@dimen/dim_20_dp"
+            android:textColor="#fff"
+            app:layout_constraintTop_toBottomOf="@id/txtPrice"
+            android:text="Pages: "/>
+
+
+        <TextView
+            android:id="@+id/txtPagesValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@+id/txtPublished"
+            android:layout_marginTop="@dimen/dim_20_dp"
+            android:layout_marginStart="@dimen/dim_8_dp"
+            android:textColor="#fff"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="@dimen/dim_20_dp"
+            app:layout_constraintTop_toBottomOf="@id/txtPrice"
+            tools:text="38"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

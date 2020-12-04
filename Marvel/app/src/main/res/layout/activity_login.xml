@@ -5,26 +5,26 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#00162C"
-    tools:context=".LoginActivity">
+    tools:context=".login.view.LoginActivity">
 
     <com.google.android.material.card.MaterialCardView
         android:layout_gravity="center"
         android:backgroundTint="#EA2427"
-        app:cardCornerRadius="15dp"
-        android:layout_margin="20dp"
-        android:layout_marginTop="200dp"
+        app:cardCornerRadius="@dimen/dim_15_dp"
+        android:layout_margin="@dimen/dim_20_dp"
+        android:layout_marginTop="@dimen/dim_200_dp"
         android:layout_width="match_parent"
-        android:layout_height="493dp">
+        android:layout_height="@dimen/dim_493_dp">
 
     
     <androidx.appcompat.widget.AppCompatTextView
         android:textAlignment="center"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="@dimen/dim_30_dp"
         android:background="#EA2427"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:textColor="#fff"
-        android:textSize="25sp"
+        android:textSize="@dimen/dim_25_sp"
         android:text="Welcome to the Marvel HQ's"/>
 
 
@@ -33,7 +33,7 @@
         android:name="androidx.navigation.fragment.NavHostFragment"
         app:navGraph="@navigation/navigation_graph"
         app:defaultNavHost="true"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="@dimen/dim_100_dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:ignore="MissingPrefix" />

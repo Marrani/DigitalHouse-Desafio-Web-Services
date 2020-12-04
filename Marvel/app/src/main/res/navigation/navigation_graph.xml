@@ -7,16 +7,24 @@
     app:startDestination="@id/loginFragment">
     <fragment
         android:id="@+id/loginFragment"
-        android:name="com.gabrielmarrani.marvel.LoginFragment"
+        android:name="com.gabrielmarrani.marvel.login.view.LoginFragment"
         android:label="fragment_login"
         tools:layout="@layout/fragment_login" >
         <action
             android:id="@+id/action_loginFragment_to_registerActivity"
             app:destination="@id/registerActivity" />
+        <action
+            android:id="@+id/action_loginFragment_to_homeActivity"
+            app:destination="@id/homeActivity" />
     </fragment>
     <activity
         android:id="@+id/registerActivity"
-        android:name="com.gabrielmarrani.marvel.RegisterActivity"
+        android:name="com.gabrielmarrani.marvel.register.view.RegisterActivity"
         android:label="activity_register"
         tools:layout="@layout/activity_register" />
+    <activity
+        android:id="@+id/homeActivity"
+        android:name="com.gabrielmarrani.marvel.comics.view.HomeActivity"
+        android:label="activity_home"
+        tools:layout="@layout/activity_home" />
 </navigation>

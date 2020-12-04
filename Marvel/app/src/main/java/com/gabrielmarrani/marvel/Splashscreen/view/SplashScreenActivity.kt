@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
-import com.gabrielmarrani.marvel.LoginActivity
+import com.gabrielmarrani.marvel.login.view.LoginActivity
 import com.gabrielmarrani.marvel.R
 
 class SplashScreenActivity : AppCompatActivity() {

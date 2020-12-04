@@ -7,7 +7,7 @@
     android:background="#00162C"
     android:orientation="vertical"
     app:cardCornerRadius="15dp"
-    tools:context="RegisterFragment">
+    tools:context=".register.view.RegisterFragment">
 
 
     <LinearLayout
@@ -19,7 +19,6 @@
         android:orientation="vertical">
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/txtNome"
             app:boxStrokeColor="#C0CCDA"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -30,15 +29,15 @@
             app:hintTextColor="#EA2427">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtNomeRegister"
                 android:background="@android:color/transparent"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textPassword"
+                android:inputType="text"
                 android:textColor="#1F2D3D" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/txtEmailLogin"
             app:boxStrokeColor="#C0CCDA"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -49,7 +48,7 @@
 
             <com.google.android.material.textfield.TextInputEditText
                 android:background="@android:color/transparent"
-                android:id="@+id/filledTextField"
+                android:id="@+id/txtEmailRegister"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textEmailAddress"
@@ -58,7 +57,6 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/txtSenhaLogin"
             app:boxStrokeColor="#C0CCDA"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -70,7 +68,7 @@
 
             <com.google.android.material.textfield.TextInputEditText
                 android:background="@android:color/transparent"
-                android:id="@+id/txtSenha"
+                android:id="@+id/txtSenhaRegister"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"
